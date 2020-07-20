@@ -9,8 +9,6 @@ export default class CustomersController {
     // TODO
     const { name, email } = request.body;
 
-    console.log('aaaaa');
-
     const createCustomer = container.resolve(CreateCustomerService);
 
     const customer = await createCustomer.execute({
